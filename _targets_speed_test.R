@@ -117,7 +117,7 @@ list(
       "tictoc"
     ),
     command = run_speed_test(
-      test_task = "mean daily trips by weekday over 18 months for each od pair",
+      test_task = "mean houlry trips by weekday over 18 months for each OD pair",
       parameters_list = parameters_list,
       test_function = speed_test_mean_hourly_trips_by_weekday_od_pair,
       spanishoddata_data_path = getOption("global.spanishoddata_data_path"),
