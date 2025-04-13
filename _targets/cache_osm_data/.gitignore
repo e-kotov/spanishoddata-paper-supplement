@@ -9,3 +9,5 @@
 !meta
 meta/*
 !meta/meta
+!meta/process
+!meta/progress

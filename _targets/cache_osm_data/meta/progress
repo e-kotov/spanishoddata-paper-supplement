@@ -1,0 +1,3 @@
+name|type|parent|branches|progress
+cached_osm_data|stem|cached_osm_data|0|dispatched
+cached_osm_data|stem|cached_osm_data|0|completed
