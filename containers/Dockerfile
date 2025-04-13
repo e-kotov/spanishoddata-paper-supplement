@@ -42,27 +42,29 @@ RUN mkdir -p renv
 COPY --chown=rstudio:rstudio ../.Rprofile .Rprofile
 COPY --chown=rstudio:rstudio ../renv/activate.R renv/activate.R
 COPY --chown=rstudio:rstudio ../renv/settings.json renv/settings.json
-
-# copy sources of non-released fix of osfr package
-# that supports pulling files from view only osf.io links
-COPY --chown=rstudio:rstudio ../rpkg rpkg
+# copy script to update mermaid.js
+COPY --chown=rstudio:rstudio ../containers/update-mermaid-js.R update-mermaid-js.R
 
 # install R packages straight into the system library
 # this prevents dependency on repositories being online
 # and saves time later for package installation
 RUN R -e "renv::restore(library = '/usr/local/lib/R/site-library')"
 
-# remove the temporary project directory
+# update mermaid.js in DiagrammeR to render mermaid output of tar_mermaid()
+RUN R -e "source('update-mermaid-js.R'); update_mermaid_js(version = '11.6.0')"
 
-# cleanup
+# remove the temporary project directory
 WORKDIR /home/rstudio
 RUN chmod -R u+w /home/rstudio/project && rm -rf /home/rstudio/project
 
+# cleanup temp files
 USER root
 RUN rm -rf /var/lib/apt/lists/*
 RUN rm -rf /tmp/downloaded_packages
 
+# switch back to rstudio user
 USER rstudio
 
+# expose port for JupyterLab integration
 EXPOSE 8888
 CMD ["jupyter", "lab", "--ip", "0.0.0.0", "--no-browser"]
