@@ -1,5 +1,5 @@
 # targets: quick access --------------------------------------------
-# Sys.setenv(TAR_PROJECT = "cache_data")
+# Sys.setenv(TAR_PROJECT = "cache_osm_data")
 # targets::tar_visnetwork(label = "branches") # view pipeline
 # targets::tar_make() # run pipeline
 #
@@ -16,7 +16,7 @@ tar_option_set(
 )
 
 # source the R scripts
-tar_source("R/cache_data/")
+tar_source("R/cache_osm_data/")
 
 # parameters -------------------------------------------------------------
 options(global.osm_path = "data/proc/osm")

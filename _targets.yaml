@@ -1,6 +1,6 @@
-cache_data:
-  script: _targets_cache_data.R
-  store: _targets/cache_data
+cache_osm_data:
+  script: _targets_cache_osm_data.R
+  store: _targets/cache_osm_data
 speed_test:
   script: _targets_speed_test.R
   store: _targets/speed_test
