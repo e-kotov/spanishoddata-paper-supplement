@@ -1,0 +1,56 @@
+digraph {
+  
+  graph [rankdir=TB, splines=polyline]
+
+  # Define hierarchy
+  { rank = same; M; A; C }  # Data Sources
+  { rank = same; S1; S2; S3 }  # Processing Steps (Functions)
+  { rank = same; F; D }  # Intermediate Data
+  { rank = same; P }  # dplyr functions step
+  { rank = same; G; X }  # Processed Data
+
+  # Data Sources
+  M [label = "For daily aggregated flows\nat municipal level (2022 onwards)\nget data from GraphQL API directly", shape=box, style=filled, fillcolor=lavender]
+  A [label = "Hourly flows and other data\nfor a few days starting in 2020\nget data from raw CSV.gz files", shape=box, style=filled, fillcolor=lavender]
+  C [label = "Analyse longer periods (several months)\nor even the whole dataset over several years", shape=box, style=filled, fillcolor=lavender]
+
+  # Processing Steps (Functions)
+  S1 [label = "spod_quick_get_od(\ndate = \'2022-03-15\')", shape=ellipse, style=filled, fillcolor=lightblue]
+  S2 [label = "spod_get(\ntype = \'origin-destination\',\nzones = \'districts\',\ndates = c(start = \'2020-02-14\',\nend = \'2020-02-21\'))", shape=ellipse, style=filled, fillcolor=lightblue]
+  S3 [label = "spod_convert(\ntype = \'origin-destination\',\nzones = \'districts\',\ndates = c(start = \'2020-02-14\',\nend = \'2021-05-09\'))", shape=ellipse, style=filled, fillcolor=lightblue]
+  S4 [label = "spod_connect()", shape=ellipse, style=filled, fillcolor=lightblue]
+
+  # Intermediate Data
+  D [label = "Path to converted data", shape=box, style=filled, fillcolor=lightgrey]
+  F [label = "\'tbl\' object with \'id\'\nfor origins and destinations\nand trip counts", shape=box, style=filled, fillcolor=lightgrey]
+
+  # New Processing Step for dplyr functions
+  P [label = "dplyr functions:\nselect(), filter(), mutate(),\ngroup_by(), summarise(), etc...", shape=ellipse, style=filled, fillcolor=lightblue]
+
+  # Further Processing
+  G [label = "dplyr::collect()", shape=ellipse, style=filled, fillcolor=lightblue]
+  H [label = "flows_data\ndata.frame / tibble", shape=box, style=filled, fillcolor=lightgrey]
+  R [label = "left_join(\nzones, flows_data)", shape=ellipse, style=filled, fillcolor=lightblue]
+  XX [label = "Spatial data\nmatched by \'id\' with\naggregated mobility flows", shape=box, style=filled, fillcolor=lightcoral]
+
+  # Spatial Data
+  X [label = "Spatial data with zones", shape=box, style=filled, fillcolor=lavender]
+  Y [label = "Zones - polygons with\nzones in sf object\nwith \'id\' that match\nwith origins and destinations", shape=box, style=filled, fillcolor=lightgrey]
+  S5 [label = "spod_get_zones(\nzones = \'districts\',\nver = 1)", shape=ellipse, style=filled, fillcolor=lightblue]
+
+  # Connections
+  M -> S1 -> F
+  A -> S2 -> F
+  C -> S3 -> D
+  D -> S4 -> F
+
+  # New Connection: tbl object -> dplyr functions -> collect()
+  F -> P -> G 
+
+  G -> H
+  H -> R
+  R -> XX
+
+  X -> S5 -> Y
+  Y -> R
+}

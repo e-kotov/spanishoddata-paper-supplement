@@ -1,0 +1,1185 @@
+[
+    {
+        "paper_short_citation": "Aleta and Moreno (2020)",
+        "paper_doi_link": "https://doi.org/10.1186/s12916-020-01619-5",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "available",
+        "code_language": "R",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": "https://doi.org/10.5281/zenodo.3701750",
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2017"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "province",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Ponce-de-Leon et al. (2021)",
+        "paper_doi_link": "https://doi.org/10.1038/s41597-021-01093-5",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access",
+            "cites technical report or data methodology document with web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://doi.org/10.5281/zenodo.4634737",
+            "https://github.com/bsc-flowmaps/flowmaps-data",
+            "https://doi.org/10.5281/zenodo.4634895"
+        ],
+        "research_focus": [
+            "data integration",
+            "covid-19",
+            "human mobility"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "hourly",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Christidis and Radics (2022)",
+        "paper_doi_link": "https://doi.org/10.2760/040554",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "available",
+        "code_language": "R",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/mikiradics/covid_spain"
+        ],
+        "research_focus": [
+            "human mobility",
+            "daily mobility behaviour"
+        ],
+        "data_years_used": [
+            "2017",
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": [
+            "province",
+            "district"
+        ],
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Terroso-Saenz and Muñoz (2022)",
+        "paper_doi_link": "https://doi.org/10.1007/s10489-021-02645-3",
+        "data_citation_approaches": [
+            "provides footnote with web link",
+            "cites technical report or data methodology document without web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/fterroso/GNN-nation-wide-mob-predictor"
+        ],
+        "research_focus": [
+            "human mobility prediction",
+            "displacement",
+            "weather and climate"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Terroso-Saenz et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.1177/08944393211071071",
+        "data_citation_approaches": [
+            "provides footnote with web link",
+            "cites technical report or data methodology document without web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "no available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/fterroso/nation_wide_mobility_comparision"
+        ],
+        "research_focus": [
+            "human mobility prediction",
+            "twitter",
+            "transportation"
+        ],
+        "data_years_used": [
+            "2017"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "province",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Smith et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.1038/s41598-022-11531-y",
+        "data_citation_approaches": [
+            "provides web link in article body",
+            "provides web link to secondary data https://github.com/bsc-flowmaps/ in article body"
+        ],
+        "data_source" : "secondary: https://github.com/bsc-flowmaps/",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "autonomous community",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Niraula et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.1007/s00477-021-02168-w",
+        "data_citation_approaches": [
+            "cites technical report or data methodology document with web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "on request",
+        "code_language": [
+            "Python",
+            "R"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "on request",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "municipality",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Del-Águila-Mejía et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.3390/ijerph20054356",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access",
+            "provides web link in article body"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "R",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "province",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "de Miguel Arribas et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.1038/s41598-023-31614-8",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "Python",
+            "R"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/phononautomata/madrid"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Rapti et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.1007/s11538-023-01152-5",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access",
+            "provides web link in article body"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "MATLAB",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://gitlab.com/peacogr/metapopulation"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "province",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Vílchez-Gómez et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.1007/s11356-023-30631-4",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "on request",
+        "preprocessed_mitma_data_shared": "on request",
+        "code_language": "R",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "noise pollution",
+            "air pollution",
+            "transportation"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "province",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Saladié et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.1080/00291951.2023.2217818",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "Change-Point Analyzer",
+            "PSPP"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "traffic accidents",
+            "transportation"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "unknown",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Steinegger et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.2196/40514",
+        "data_citation_approaches": [
+            "cites technical report or data methodology document with web link",
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "unknown",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "province",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Mars et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.1016/j.tra.2022.05.004",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "unknown",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "psychological wellfbeing",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "unknown"
+        ],
+        "data_type_used": [
+          "unknown"
+        ],
+        "data_time_resolution_used": "unknown",
+        "data_spatial_resolution_used": "unknown",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "García-Martínez-de-Albéniz et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.3390/su14084849",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "R",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "wildlife-vehicle collisions"
+        ],
+        "data_years_used": [
+            "2017"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "unknown",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Rodríguez Rasero et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.1016/j.scitotenv.2021.150573",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "R",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19 wastewater detection"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Echaniz et al. (2021)",
+        "paper_doi_link": "https://doi.org/10.1016/j.tranpol.2021.07.011",
+        "data_citation_approaches": [
+            "cites web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "unknown",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "daily mobility behaviour"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "unknown",
+        "data_spatial_resolution_used": "unknown",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Sanjuán and Domingo-Calap (2021)",
+        "paper_doi_link": "https://doi.org/10.3389/fviro.2021.776998",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "on request",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "unknown",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "covid-19",
+            "epidemiology"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Henríquez et al. (2020)",
+        "paper_doi_link": "https://doi.org/10.1016/j.hlpt.2020.08.013",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "unknown",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "municipality",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Terroso-Saenz and Muñoz (2023)",
+        "paper_doi_link": "https://doi.org/10.3897/jucs.94514",
+        "data_citation_approaches": [
+            "provides footnote with web link",
+            "cites technical report or data methodology document with web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/fterroso/open_sensor_data_predictor"
+        ],
+        "research_focus": [
+            "human mobility prediction",
+            "transportation"
+        ],
+        "data_years_used": [
+            "2017"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "hourly",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Casaburi et al. (2024)",
+        "paper_doi_link": "https://doi.org/10.48550/arXiv.2405.19141",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "covid-19",
+            "epidemiology"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "municipality",
+        "publication_type": "preprint"
+    },
+    {
+        "paper_short_citation": "Ponce-de-Leon et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.1101/2023.10.09.23296732",
+        "data_citation_approaches": [
+            "provides web link in article body",
+            "cites secondary data : 10.5281/zenodo.4634895"
+        ],
+        "data_source" : "secondary: https://github.com/bsc-flowmaps/",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not yet available (preprint)",
+        "code_for_mitma_preprocessing": "not yet available (preprint)",
+        "code_for_analysis": "not yet available (preprint)",
+        "code_for_datavis": "not yet available (preprint)",
+        "repository_links": [
+            "https://gitlab.bsc.es/flowmaps/te-epidemics"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "preprint"
+    },
+    {
+        "paper_short_citation": "Terroso-Saenz et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.1016/j.eswa.2022.117477",
+        "data_citation_approaches": [
+            "provides footnote with web link",
+            "cites technical report or data methodology document without web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/fterroso/mob_predictor_twitter"
+        ],
+        "research_focus": [
+            "twitter",
+            "human mobility prediction",
+            "transportation"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Gonzalez-Vidal et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.32604/cmc.2022.021492",
+        "data_citation_approaches": [
+            "provides footnote with web link",
+            "cites technical report or data methodology document without web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/fterroso/mobility_murcia_umu_ucam"
+        ],
+        "research_focus": [
+            "parking availability prediction",
+            "transportation"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "hourly",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Ventura et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.1016/j.epidem.2022.100544",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/paulocv/metapop-behavioral",
+            "https://doi.org/10.5281/zenodo.6258444"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2017"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "province",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Slater et al. (2022)",
+        "paper_doi_link": "https://doi.org/10.1016/j.spasta.2021.100540",
+        "data_citation_approaches": [
+            "cites secondary data : https://flowmaps.life.bsc.es/flowboard/"
+        ],
+        "data_source" : "secondary: https://github.com/bsc-flowmaps/",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "R",
+            "stan"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/cghr-toronto/public/tree/master/covid/spain_public_code"
+        ],
+        "research_focus": [
+            "epidemiology",
+            "covid-19"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "municipality",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Terroso-Saenz et al. (2021)",
+        "paper_doi_link": "https://doi.org/10.1109/ACCESS.2021.3090582",
+        "data_citation_approaches": [
+            "cites technical report or data methodology document without web link",
+            "provides footnote with web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "Python"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "human mobility prediction",
+            "transportation"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "hourly",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Terroso-Saenz et al. (2024)",
+        "paper_doi_link": "https://doi.org/10.1145/3637492",
+        "data_citation_approaches": [
+            "cites technical report or data methodology document without web link",
+            "provides footnote with web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "Python"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "air pollution",
+            "transportation"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "hourly",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Conesa et al. (2024)",
+        "paper_doi_link": "https://doi.org/10.3389/fpubh.2024.1288531",
+        "data_citation_approaches": [
+            "provides web link to the Ministry homepage in article body"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "MATLAB"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "covid-19",
+            "epidemiology"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "province",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Belvis et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.3389/10.1038/s41598-023-36169-2",
+        "data_citation_approaches": [
+            "provides web link in article body"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "R",
+            "C"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "not available"
+        ],
+        "research_focus": [
+            "covid-19",
+            "epidemiology"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Duran-Sala et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.48550/arXiv.2407.01799",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access",
+            "provides web link in article body"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "Python"
+        ],
+        "code_for_mitma_data_download": "not yet available (preprint)",
+        "code_for_mitma_preprocessing": "not yet available (preprint)",
+        "code_for_analysis": "not yet available (preprint)",
+        "code_for_datavis": "not yet available (preprint)",
+        "repository_links": [
+            "https://github.com/adprabhak/Complexity72h_Mobility",
+            "https://spain-mobility-dashboard.streamlit.app/"
+        ],
+        "research_focus": [
+            "covid-19",
+            "epidemiology"
+        ],
+        "data_years_used": [
+            "2022",
+            "2023",
+            "2024"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Curado et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.1016/j.jocs.2022.101819",
+        "data_citation_approaches": [
+            "provides footnote with web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "unknown"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": "not available",
+        "research_focus": [
+            "network science",
+            "graph theory"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "quarterly",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "García-García et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.1017/S0950268823000985",
+        "data_citation_approaches": [
+            "cites web link with current page title at the time of access"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "unknown"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": "not available",
+        "research_focus": [
+            "epidemiology",
+            "mpox"
+        ],
+        "data_years_used": [
+            "2022"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Al-Akioui and Monzon (2023)",
+        "paper_doi_link": "https://doi.org/10.1016/j.trpro.2023.11.054",
+        "data_citation_approaches": [
+            "cites technical report or data methodology document without web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "unknown"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "not available",
+        "code_for_datavis": "not available",
+        "repository_links": "not available",
+        "research_focus": [
+            "telework",
+            "daily mobility behaviour"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "conference paper"
+    },
+    {
+        "paper_short_citation": "Ferrari et al. (2021)",
+        "paper_doi_link": "https://doi.org/10.1038/s41746-020-00374-4",
+        "data_citation_approaches": [
+            "provides web link in article body"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": [
+            "R"
+        ],
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "not available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "not available",
+        "repository_links": [
+            "https://flowmaps.life.bsc.es/shiny/ct_app/",
+            "https://static-content.springer.com/esm/art%3A10.1038%2Fs41746-020-00374-4/MediaObjects/41746_2020_374_MOESM2_ESM.txt"
+        ],
+        "research_focus": [
+            "telework",
+            "daily mobility behaviour"
+        ],
+        "data_years_used": [
+            "2020"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "daily",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    },
+    {
+        "paper_short_citation": "Terroso-Saenz et al. (2023)",
+        "paper_doi_link": "https://doi.org/10.1016/j.inffus.2022.11.005",
+        "data_citation_approaches": [
+            "provides footnote with web link",
+            "cites technical report or data methodology document without web link"
+        ],
+        "data_source": "original primary data",
+        "raw_mitma_data_shared": "not available",
+        "preprocessed_mitma_data_shared": "not available",
+        "code_language": "Python",
+        "code_for_mitma_data_download": "not available",
+        "code_for_mitma_preprocessing": "available",
+        "code_for_analysis": "available",
+        "code_for_datavis": "available",
+        "repository_links": [
+            "https://github.com/fterroso/tourist_mob"
+        ],
+        "research_focus": [
+            "human mobility prediction",
+            "displacement",
+            "weather and climate"
+        ],
+        "data_years_used": [
+            "2020",
+            "2021"
+        ],
+        "data_type_used": [
+          "origin-desintation matrices"
+        ],
+        "data_time_resolution_used": "hourly",
+        "data_spatial_resolution_used": "district",
+        "publication_type": "journal article"
+    }
+]
