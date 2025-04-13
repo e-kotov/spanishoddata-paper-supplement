@@ -1,0 +1,4 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+.Random.seed|object|b65e5a4a4e0eb65f|||||||||||||||
+cache_osm_data|function|6a93c2e22e5219f3
+cached_osm_data|stem|d5776b6c7f4026e8|6a3200fe84ceb0d1|011008081f3bd791|-381704132|data/proc/osm/geofabrik_valencia-latest.osm.pbf|t20191.5316319444s|s127663203b|127663203|file|local|vector|||22.272||
