@@ -4,6 +4,9 @@ cache_osm_data:
 speed_test:
   script: _targets_speed_test.R
   store: _targets/speed_test
+data_prep:
+  script: _targets_data_prep.R
+  store: _targets/data_prep
 main:
   script: _targets_main.R
   store: _targets/main

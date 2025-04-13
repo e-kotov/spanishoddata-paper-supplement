@@ -1,28 +1,22 @@
 # Case Study 1: Assessing Cycling Potential and Infrastructure Provision in Valencia
-
-get_cached_osm_from_osf <- function(
+get_cached_osm_data_from_zenodo <- function(
   osm_path = getOption("global.osm_path"),
-  view_only_token = NULL
+  zenodo_url = "https://zenodo.org/records/15207223/files/geofabrik_valencia-latest.osm.pbf?download=1"
 ) {
-  if (!fs::dir_exists(osm_path)) {
-    fs::dir_create(osm_path, recurse = TRUE)
+  file_save_path <- fs::path(osm_path, "geofabrik_valencia-latest.osm.pbf")
+  if (fs::file_exists(file_save_path)) {
+    return(file_save_path)
+  } else {
+    if (!fs::dir_exists(osm_path)) {
+      fs::dir_create(osm_path, recurse = TRUE)
+    }
+    result <- download.file(zenodo_url, destfile = file_save_path, mode = "wb")
+    if (result == 0) {
+      return(file_save_path)
+    } else {
+      stop("Download failed")
+    }
   }
-
-  osm_file <- osfr::osf_retrieve_file(
-    id = "67f65be86b36aa1de68297f6",
-    view_only = view_only_token
-  )
-
-  osm_file_path <- osfr::osf_download(
-    x = osm_file,
-    path = osm_path,
-    conflicts = "overwrite",
-    verbose = TRUE,
-    progress = TRUE,
-    view_only = view_only_token
-  )
-
-  return(osm_file_path$local_path)
 }
 
 case_study_valencia_predownload_od_data <- function(
@@ -83,9 +77,8 @@ case_study_valencia_preaggregate_od_data <- function(
   return(valencia_od_and_zones)
 }
 
-case_study_valencia_biking_potential <- function(
+case_study_valencia_biking_potential_prep <- function(
   valencia_od_and_zones = valencia_od_and_zones,
-  plots_output_dir = "plots/main-plots",
   osm_path = getOption("global.osm_path"),
   cached_osm
 ) {
@@ -139,8 +132,7 @@ case_study_valencia_biking_potential <- function(
   # map_net <- osmactive::plot_osm_tmap(cycle_net)
   # map_net
 
-  # Plot map 1
-
+  # ---- Data required for plotting ----
   # Define bounding box with appropriate CRS
   bbox_valencia_zoom <- st_bbox(
     c(
@@ -151,43 +143,6 @@ case_study_valencia_biking_potential <- function(
     ),
     crs = st_crs(districts_valencia)
   )
-
-  # Create the map object
-  map1 <- tm_shape(valencia_intrazonal_sf, bbox_valencia_zoom) +
-    tm_polygons(
-      "trips",
-      border.col = "grey70",
-      palette = "YlGnBu",
-      alpha = 0.7,
-      title = "Potential Cycling Trips\n(Intra-Zone)",
-      style = "fixed",
-      breaks = c(0, 100000, 200000, 300000, 400000, 500000, Inf),
-      textNA = "",
-      na.value = "transparent"
-    ) +
-    tm_shape(cycle_net) +
-    tm_lines(
-      col = "grey20",
-      lpha = 0.7,
-      lwd = 1
-    ) + # Sets the legend title
-    tm_add_legend(
-      type = "lines",
-      labels = "Cycle network",
-      col = "grey20",
-      lpha = 0.7,
-      lwd = 1
-    ) +
-    tm_layout(
-      legend.outside = FALSE,
-      frame = FALSE,
-      legend.title.size = 1.3,
-      legend.text.size = 1.3
-    ) +
-    tm_legend(frame = FALSE)
-
-  # tmap_mode("plot")
-  # map1
 
   # Inter-zonal analysis: Focus on trips between different zones
 
@@ -203,7 +158,6 @@ case_study_valencia_biking_potential <- function(
   od_valencia_sf <- od::od_to_sf(od_valencia, z = districts_valencia)
 
   # Function to extract trips through intermediate districts (i.e., trips passing through multiple districts)
-
   extract_trips_through_intermediate_districts <- function(od_data, districts) {
     expanded_trips <- list()
 
@@ -458,92 +412,14 @@ case_study_valencia_biking_potential <- function(
   # Final dataset! Convert OD pairs to spatial lines
   od_sf <- od_to_sf(merged_table, z = districts_valencia)
 
-  # Create the visualisation -->
-
-  # Plot map 2
-
-  # Define connectivity categories
-  breaks <- quantile(
-    od_sf$ratio,
-    probs = seq(0, 1, length.out = 5),
-    na.rm = TRUE
-  )
-  labels <- c("Low", "Medium Low", "Medium High", "High")
-
-  # Assign categories and adjust factor levels
-  od_sf$connectivity_index <- factor(
-    cut(od_sf$ratio, breaks = breaks, labels = labels, include.lowest = TRUE),
-    levels = labels
+  # Return a list of objects used for plotting
+  valencia_data_for_plots <- list(
+    districts_valencia = districts_valencia,
+    valencia_intrazonal_sf = valencia_intrazonal_sf,
+    cycle_net = cycle_net,
+    bbox_valencia_zoom = bbox_valencia_zoom,
+    od_sf = od_sf
   )
 
-  # Define reversed color scale (blue = high, red = low)
-  colors <- rev(RColorBrewer::brewer.pal(4, "RdYlBu")[4:1])
-
-  # Generate map
-  map2 <- tm_shape(districts_valencia, bbox_valencia_zoom) +
-    tm_borders("grey70") +
-    tm_shape(od_sf) +
-    tm_lines(
-      lwd = "trips",
-      col = "connectivity_index",
-      col_alpha = 0.7,
-      col.scale = tm_scale(values = colors),
-      col.legend = tm_legend(title = "Cycling Network\nConnectivity"),
-      lwd.scale = tm_scale_continuous(
-        values.scale = 10
-      ),
-      lwd.legend = tm_legend(
-        title = "Potential Cycling Trips\n(Inter-Zone)",
-        col = "gray70"
-      )
-    ) +
-    # tm_shape(cycle_net) +
-    # tm_lines(col = "red",
-    #         lwd = 1) +  # Sets the legend title
-    tm_layout(
-      legend.outside = FALSE,
-      frame = FALSE,
-      legend.title.size = 1.3,
-      legend.text.size = 1.3
-    ) +
-    tm_legend(frame = FALSE)
-
-  # tmap_mode("plot")
-  # map2
-
-  # Create a facet with both images
-  # Add bold titles to each map
-  map1 <- map1 +
-    tm_layout(
-      main.title = "A",
-      main.title.fontface = "bold",
-      main.title.size = 2
-    )
-  map2 <- map2 +
-    tm_layout(
-      main.title = "B",
-      main.title.fontface = "bold",
-      main.title.size = 2
-    )
-
-  # Create the figure with both maps
-  figure <- tmap_arrange(map1, map2, ncol = 2)
-
-  if (!fs::dir_exists(plots_output_dir)) {
-    fs::dir_create(plots_output_dir, recurse = TRUE)
-  }
-
-  plot_save_path <- paste0(plots_output_dir, "/fig-valencia.png")
-
-  # Save map as an image
-  tmap::tmap_save(
-    tm = figure,
-    filename = plot_save_path,
-    dpi = 300,
-    width = 10,
-    height = 8,
-    units = "in"
-  )
-
-  return(plot_save_path)
+  return(valencia_data_for_plots)
 }

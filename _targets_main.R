@@ -24,6 +24,16 @@ speed_test_summary <- tar_read(
   store = "_targets/speed_test"
 )
 
+# load data prep results from the "data_prep" pipeline
+valencia_data_for_plots <- tar_read(
+  valencia_data_for_plots,
+  store = "_targets/data_prep"
+)
+madrid_data_for_plots <- tar_read(
+  madrid_data_for_plots,
+  store = "_targets/data_prep"
+)
+
 # parameters -------------------------------------------------------------
 # you might want to change these according to the specs of the system you are using
 options(global.max_mem_gb = 24)
@@ -78,74 +88,22 @@ list(
   ),
 
   # case study - Valencia
-
-  tar_target(
-    name = valencia_od_data_files,
-    packages = c("spanishoddata"),
-    command = case_study_valencia_predownload_od_data(
-      data_dir = getOption("global.spanishoddata_data_path")
-    )
-  ),
-
-  tar_target(
-    name = valencia_osm,
-    packages = c("osfr", "sf"),
-    command = get_cached_osm_from_osf(
-      osm_path = getOption("global.osm_path"),
-      view_only_token = getOption("global.osf_view_only_token")
-    ),
-    format = "file"
-  ),
-
-  tar_target(
-    name = valencia_od_and_zones,
-    packages = c("spanishoddata", "dplyr", "sf"),
-    command = case_study_valencia_preaggregate_od_data(
-      data_dir = "data/input/mitms-data/",
-      max_mem_gb = getOption("global.max_mem_gb"),
-      max_n_cpu = getOption("global.max_n_cpu"),
-      od_data_files = valencia_od_data_files
-    )
-  ),
-
   tar_target(
     name = valencia_plot,
-    packages = c("tidyverse", "sf", "od", "tmap", "osmactive"),
-    command = case_study_valencia_biking_potential(
-      valencia_od_and_zones = valencia_od_and_zones,
-      plots_output_dir = "plots/main-plots",
-      osm_path = getOption("global.osm_path"),
-      cached_osm = valencia_osm
+    packages = c("tidyverse", "sf", "tmap"),
+    command = case_study_valencia_biking_potential_plot(
+      plot_objects = valencia_data_for_plots,
+      plots_output_dir = "plots/main-plots"
     ),
     format = "file"
   ),
 
   # case study - Madrid
-
-  tar_target(
-    name = madrid_od_data_files,
-    packages = c("spanishoddata"),
-    command = case_study_madrid_predownload_od_data(
-      data_dir = getOption("global.spanishoddata_data_path")
-    )
-  ),
-
-  tar_target(
-    name = madrid_od_and_zones,
-    packages = c("spanishoddata", "sf", "tidyverse"),
-    command = case_study_madrid_preaggregate_od_data(
-      data_dir = "data/input/mitms-data/",
-      max_mem_gb = getOption("global.max_mem_gb"),
-      max_n_cpu = getOption("global.max_n_cpu"),
-      od_data_files = madrid_od_data_files
-    )
-  ),
-
   tar_target(
     name = madrid_plot,
     packages = c("tidyverse", "sf", "flowmapper", "patchwork"),
-    command = case_study_madrid_work_v_nonwork_trips(
-      madrid_od_and_zones = madrid_od_and_zones,
+    command = case_study_madrid_work_v_nonwork_trips_plot(
+      madrid_data_for_plots = madrid_data_for_plots,
       plots_output_dir = "plots/main-plots"
     ),
     format = "file"
