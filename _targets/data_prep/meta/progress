@@ -1,0 +1,9 @@
+name|type|parent|branches|progress
+valencia_osm|stem|valencia_osm|0|skipped
+valencia_od_data_files|stem|valencia_od_data_files|0|skipped
+madrid_od_data_files|stem|madrid_od_data_files|0|skipped
+valencia_od_and_zones|stem|valencia_od_and_zones|0|skipped
+madrid_data_for_plots|stem|madrid_data_for_plots|0|dispatched
+madrid_data_for_plots|stem|madrid_data_for_plots|0|completed
+valencia_data_for_plots|stem|valencia_data_for_plots|0|dispatched
+valencia_data_for_plots|stem|valencia_data_for_plots|0|completed
