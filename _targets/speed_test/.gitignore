@@ -9,3 +9,4 @@
 !meta
 meta/*
 !meta/meta
+!objects/speed_test_summary
