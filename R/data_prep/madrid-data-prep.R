@@ -39,26 +39,15 @@ case_study_madrid_preaggregate_od_data <- function(
   # set the dates
   dates <- seq(as.Date("2023-02-06"), as.Date("2023-02-10"), by = "day")
 
-  # get and convert the flows do DuckDB database
-  od_flows_db_file <- spod_convert(
+  # get flows
+  od_flows <- spod_get(
     type = "od",
     zones = "distr",
     dates = dates,
     max_mem_gb = max_mem_gb,
     max_n_cpu = max_n_cpu,
-    max_download_size_gb = 6,
-    overwrite = TRUE,
-    save_format = "duckdb",
-    save_path = duckdb_save_path
+    max_download_size_gb = 6
   )
-
-  # connect the database
-  od_flows <- spanishoddata::spod_connect(
-    data_path = duckdb_save_path,
-    max_mem_gb = max_mem_gb,
-    max_n_cpu = max_n_cpu
-  )
-  # spanishoddata::spod_disconnect(od_flows) # in case one needs to disconnect the database, e.g. to re-run the spod_convert() above
 
   # get the districts
   districts <- spod_get_zones("dist", ver = 2)
