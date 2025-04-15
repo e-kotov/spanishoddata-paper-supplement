@@ -116,28 +116,34 @@ case_study_madrid_work_v_nonwork_trips_plot <- function(
     nodes = nodes,
     edge_width_factor = 1 / 3.11
   ) +
-    labs(title = "A: Home-Work/Study Trips", subtitle = "Morning (7-11)")
+    labs(title = "A: Home to Work/Study Trips", subtitle = "Morning (7-11)")
 
   p_non_work_morning <- create_flowmap(
     od = od_non_work_morning,
     nodes = nodes,
     edge_width_factor = 1
   ) +
-    labs(title = "B: Non-Work Trips", subtitle = "Morning (7-11)")
+    labs(
+      title = "B: Home/Work/Study to Other Trips",
+      subtitle = "Morning (7-11)"
+    )
 
   p_home_work_study_evening <- create_flowmap(
     od = od_home_work_study_evening,
     nodes = nodes,
     edge_width_factor = 1 / 4.62
   ) +
-    labs(title = "C: Home-Work/Study Trips", subtitle = "Evening (17-21)")
+    labs(title = "C: Home to Work/Study Trips", subtitle = "Evening (17-21)")
 
   p_non_work_evening <- create_flowmap(
     od = od_non_work_evening,
     nodes = nodes,
     edge_width_factor = 1 / 1.19
   ) +
-    labs(title = "D: Non-Work Trips", subtitle = "Evening (17-21)")
+    labs(
+      title = "D: Home/Work/Study to Other Trips",
+      subtitle = "Evening (17-21)"
+    )
 
   p_compare <- (p_home_work_study_morning + p_non_work_morning) /
     (p_home_work_study_evening + p_non_work_evening)
