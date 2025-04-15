@@ -34,17 +34,6 @@ madrid_data_for_plots <- tar_read(
   store = "_targets/data_prep"
 )
 
-# parameters -------------------------------------------------------------
-# you might want to change these according to the specs of the system you are using
-options(global.max_mem_gb = 24)
-options(global.max_n_cpu = parallelly::availableCores() - 1)
-options(global.spanishoddata_data_path = "data/input/mitms-data/")
-spanishoddata::spod_set_data_dir(getOption("global.spanishoddata_data_path"))
-options(global.osm_path = "data/proc/osm")
-# token to access the read only version of the OSF repository
-options(global.osf_view_only_token = "2af02ae84922467c8b9a22f57d249295")
-
-
 list(
   # Prepare gathered articles data -----------------------------------------
   tar_target(
