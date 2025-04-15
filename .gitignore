@@ -54,3 +54,8 @@ renv/staging
 slurm/logs/*
 private
 nohup.out
+.cache
+.ipython
+.jupyter
+.local
+.config
