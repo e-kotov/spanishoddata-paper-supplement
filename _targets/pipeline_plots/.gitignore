@@ -9,4 +9,7 @@
 !meta
 meta/*
 !meta/meta
-
+!objects
+!objects/*
+!workspaces
+!workspaces/*
