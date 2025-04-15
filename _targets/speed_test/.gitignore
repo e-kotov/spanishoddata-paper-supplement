@@ -9,4 +9,6 @@
 !meta
 meta/*
 !meta/meta
+!objects/
+objects/*
 !objects/speed_test_summary
