@@ -46,7 +46,7 @@ list(
 
   tar_target(
     name = articles_csv,
-    packages = c("RcppSimdJson", "tidyverse", "fs"),
+    packages = c("tidyverse", "fs"),
     command = convert_gathered_articles_to_csv(
       articles = articles,
       output_csv_path = "supplement-data/articles-using-mitms-mobility-data.csv"
