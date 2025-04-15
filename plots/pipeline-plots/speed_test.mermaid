@@ -1,0 +1,32 @@
+graph LR
+  style Legend fill:#FFFFFF00,stroke:#000000;
+  style Graph fill:#FFFFFF00,stroke:#000000;
+  subgraph Legend
+    direction LR
+    xf1522833a4d242c5([""Up to date""]):::uptodate --- xbecb13963f49e50b{{""Object""}}:::none
+    xbecb13963f49e50b{{""Object""}}:::none --- xd03d7c7dd2ddda2b([""Stem""]):::none
+    xd03d7c7dd2ddda2b([""Stem""]):::none --- xeb2d7cac8a1ce544>""Function""]:::none
+    xeb2d7cac8a1ce544>""Function""]:::none --- x6f7e04ea3427f824[""Pattern""]:::none
+  end
+  subgraph Graph
+    direction LR
+    x6f100b36ee85a66b(["od_data_csv"]):::uptodate --> xe73ae2b752e92352(["od_data_duckdb"]):::uptodate
+    x6f100b36ee85a66b(["od_data_csv"]):::uptodate --> x2a59477f0c69e94f(["od_data_parquet"]):::uptodate
+    x0d4cfb50837231d7(["speed_test_params_grid"]):::uptodate --> x1ba009c025a96584(["parameters_list"]):::uptodate
+    x24ae4f567f4e274f{{"mem_to_test"}}:::uptodate --> x0d4cfb50837231d7(["speed_test_params_grid"]):::uptodate
+    xd1617093ab22aacb{{"ncpu_to_test"}}:::uptodate --> x0d4cfb50837231d7(["speed_test_params_grid"]):::uptodate
+    x6f100b36ee85a66b(["od_data_csv"]):::uptodate --> x1e02c4d71a7164cc["speed_test_result<br>126 branches"]:::uptodate
+    x1ba009c025a96584(["parameters_list"]):::uptodate --> x1e02c4d71a7164cc["speed_test_result<br>126 branches"]:::uptodate
+    xe437e254545b90f4>"run_speed_test"]:::uptodate --> x1e02c4d71a7164cc["speed_test_result<br>126 branches"]:::uptodate
+    xe73ae2b752e92352(["od_data_duckdb"]):::uptodate --> x1e02c4d71a7164cc["speed_test_result<br>126 branches"]:::uptodate
+    x2a59477f0c69e94f(["od_data_parquet"]):::uptodate --> x1e02c4d71a7164cc["speed_test_result<br>126 branches"]:::uptodate
+    x4ac429f244039f42>"speed_test_mean_hourly_trips_by_weekday_od_pair"]:::uptodate --> x1e02c4d71a7164cc["speed_test_result<br>126 branches"]:::uptodate
+    x1e02c4d71a7164cc["speed_test_result<br>126 branches"]:::uptodate --> x8557bb8ec85eb1cb(["speed_test_summary"]):::uptodate
+    x8557bb8ec85eb1cb(["speed_test_summary"]):::uptodate --> x268cb7f6f5b2b385(["speed_test_summary_csv"]):::uptodate
+  end
+  classDef uptodate stroke:#000000,color:#ffffff,fill:#354823;
+  classDef none stroke:#000000,color:#000000,fill:#94a4ac;
+  linkStyle 0 stroke-width:0px;
+  linkStyle 1 stroke-width:0px;
+  linkStyle 2 stroke-width:0px;
+  linkStyle 3 stroke-width:0px;

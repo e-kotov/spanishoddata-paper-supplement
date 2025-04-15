@@ -18,6 +18,7 @@ generate_pipelines_mermaid_code <- function(
 
   # get code
   for (pipeline in pipelines) {
+    print(paste0("Building mermaid plot for: ", pipeline))
     Sys.setenv("TAR_PROJECT" = pipeline)
     pipeline_mermaid_tmp <- targets::tar_mermaid(label = "branches")
     mermaid_save_path <- file.path(
@@ -28,6 +29,7 @@ generate_pipelines_mermaid_code <- function(
       text = pipeline_mermaid_tmp,
       con = mermaid_save_path
     )
+    print(paste0("Finished building mermaid plot for: ", pipeline))
     pipelines_mermaid_files[[pipeline]] <- mermaid_save_path
   }
   pipelines_mermaid_files <- unlist(pipelines_mermaid_files)

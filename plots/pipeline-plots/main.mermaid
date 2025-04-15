@@ -1,0 +1,30 @@
+graph LR
+  style Legend fill:#FFFFFF00,stroke:#000000;
+  style Graph fill:#FFFFFF00,stroke:#000000;
+  subgraph Legend
+    direction LR
+    xf1522833a4d242c5([""Up to date""]):::uptodate --- xd03d7c7dd2ddda2b([""Stem""]):::none
+    xd03d7c7dd2ddda2b([""Stem""]):::none --- xeb2d7cac8a1ce544>""Function""]:::none
+    xeb2d7cac8a1ce544>""Function""]:::none --- xbecb13963f49e50b{{""Object""}}:::none
+  end
+  subgraph Graph
+    direction LR
+    x508df78dd19083d4>"generate_speed_test_plot"]:::uptodate --> x5bbdee35485a44b1(["analysis_speed_plot"]):::uptodate
+    x8557bb8ec85eb1cb{{"speed_test_summary"}}:::uptodate --> x5bbdee35485a44b1(["analysis_speed_plot"]):::uptodate
+    x3aeeb28143e41854>"import_gathered_articles_data_from_json"]:::uptodate --> x9c6c40874a6e5e7f(["articles"]):::uptodate
+    x9c6c40874a6e5e7f(["articles"]):::uptodate --> xf11c7d6573ef44a2(["articles_csv"]):::uptodate
+    x859c42751988546f>"convert_gathered_articles_to_csv"]:::uptodate --> xf11c7d6573ef44a2(["articles_csv"]):::uptodate
+    xc5bbdc963c053b81>"generate_package_workflow_plot"]:::uptodate --> x5c8faccd6e46f0e1(["fig_package_workflow"]):::uptodate
+    x1b29203752587b19>"save_supplement_plot"]:::uptodate --> xd95c0fa5e907f183>"generate_previous_uses_plots"]:::uptodate
+    x6b1f8b80aab16747{{"madrid_data_for_plots"}}:::uptodate --> x609c6dcf6dbfc7d0(["madrid_plot"]):::uptodate
+    x2146fa2182775eed>"case_study_madrid_work_v_nonwork_trips_plot"]:::uptodate --> x609c6dcf6dbfc7d0(["madrid_plot"]):::uptodate
+    x9c6c40874a6e5e7f(["articles"]):::uptodate --> x43e557f1c22e323c(["previous_uses_plots"]):::uptodate
+    xd95c0fa5e907f183>"generate_previous_uses_plots"]:::uptodate --> x43e557f1c22e323c(["previous_uses_plots"]):::uptodate
+    x9faadea16c8c1b32>"case_study_valencia_biking_potential_plot"]:::uptodate --> xc4ce86fa66a727f2(["valencia_plot"]):::uptodate
+    xdb693f8581b6dc3c{{"valencia_data_for_plots"}}:::uptodate --> xc4ce86fa66a727f2(["valencia_plot"]):::uptodate
+  end
+  classDef uptodate stroke:#000000,color:#ffffff,fill:#354823;
+  classDef none stroke:#000000,color:#000000,fill:#94a4ac;
+  linkStyle 0 stroke-width:0px;
+  linkStyle 1 stroke-width:0px;
+  linkStyle 2 stroke-width:0px;

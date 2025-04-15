@@ -1,0 +1,16 @@
+graph LR
+  style Legend fill:#FFFFFF00,stroke:#000000;
+  style Graph fill:#FFFFFF00,stroke:#000000;
+  subgraph Legend
+    direction LR
+    xf1522833a4d242c5([""Up to date""]):::uptodate --- xeb2d7cac8a1ce544>""Function""]:::none
+    xeb2d7cac8a1ce544>""Function""]:::none --- xd03d7c7dd2ddda2b([""Stem""]):::none
+  end
+  subgraph Graph
+    direction LR
+    x01371c151cedb432>"cache_osm_data"]:::uptodate --> xc3cff2dd6d92662b(["cached_osm_data"]):::uptodate
+  end
+  classDef uptodate stroke:#000000,color:#ffffff,fill:#354823;
+  classDef none stroke:#000000,color:#000000,fill:#94a4ac;
+  linkStyle 0 stroke-width:0px;
+  linkStyle 1 stroke-width:0px;

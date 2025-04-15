@@ -1,0 +1,12 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+pipelines|stem|01bf1492836dbb04|97957d38649b55f5|d8574280bf89bb78|805523552||t20193.5636773004s|s119b|119|qs|local|vector|||0.03||
+mermaid_js|stem|f8afabc6e443d834|c72fe6e263dddec1|0222dc343692322d|1823082020||t20193.5636784629s|s73b|73|qs|local|vector|||0.06||
+update_mermaid_js|function|e9e3f7e6e8c6244d
+render_mermaid_plots_png|function|a0cbc3e26627e9fe
+detect_pipelines_in_current_project|function|7837b2829702245b
+render_mermaid_plots_html|function|1d901b53876f9614
+pipeline_plots_dir|object|69d381635e69264c
+generate_pipelines_mermaid_code|function|1305124ddf56d9a5
+pipelines_mermaid_files|stem|11163c90ece680a8|857952230a165294|89d2ffc2c102789b|344263467|plots/pipeline-plots/cache_osm_data.mermaid*plots/pipeline-plots/speed_test.mermaid*plots/pipeline-plots/data_prep.mermaid*plots/pipeline-plots/main.mermaid|t20193.5741664753s|s7104b|7104|file|local|vector|||44.56||
+pipeline_plots_html|stem|b9cd5f1d7d09a710|816f181b2b862eac|9268c441995bf353|1403894912|plots/pipeline-plots/cache_osm_data.html*plots/pipeline-plots/speed_test.html*plots/pipeline-plots/data_prep.html*plots/pipeline-plots/main.html|t20193.574202999s|s12184616b|12184616|file|local|vector|||3.19||
+pipeline_plots_png|stem|868f8ceaec1c57fc|77c166f7c81eeeb8|2c82302a43db7f3f|-142669610|plots/pipeline-plots/cache_osm_data.png*plots/pipeline-plots/speed_test.png*plots/pipeline-plots/data_prep.png*plots/pipeline-plots/main.png|t20193.5744996228s|s371061b|371061|file|local|vector|||25.46||
