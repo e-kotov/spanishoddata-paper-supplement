@@ -105,6 +105,7 @@ list(
     command = generate_speed_test_plot(
       test_results_table = speed_test_summary,
       plots_output_dir = "plots/supplement-plots"
-    )
+    ),
+    format = "file"
   )
 )
