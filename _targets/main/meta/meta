@@ -1,0 +1,20 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+save_supplement_plot|function|bfb8d7c8d22fa46b
+convert_gathered_articles_to_csv|function|2b578ecd2ce54366
+generate_speed_test_plot|function|d8f15a0b8f97e469
+valencia_data_for_plots|object|504733e545672dd1
+speed_test_summary|object|bb023747b49d8e78
+.Random.seed|object|f3c3f3a4ee0e6082
+import_gathered_articles_data_from_json|function|5f99c46d39fc06cd
+case_study_madrid_work_v_nonwork_trips_plot|function|17357a3ba6b82f7e
+generate_package_workflow_plot|function|73db5a4bc203ce3a
+madrid_data_for_plots|object|948fee50e8f38a0b
+case_study_valencia_biking_potential_plot|function|787a7c6e37015d45
+generate_previous_uses_plots|function|3d6a0990ce536a52
+articles|stem|f2c892370b4903a8|7b62e95d458540cb|c28a62d1852939eb|-1443617453||t20193.486771384s|s3590b|3590|qs|local|vector|||0.064||
+madrid_plot|stem|437b43b3c7254be0|57e2ed3def886989|a991d811573b0688|1264963812|plots/main-plots/fig-madrid.png|t20193.4867980831s|s3284795b|3284795|file|local|vector|||2.292|[1m[22mRemoved 1 row containing missing values or values outside the scale range (`geom_text()`).. [1m[22mRemoved 1 row containing missing values or values outside the scale range (`geom_text()`).|
+analysis_speed_plot|stem|b78e1c589eee9019|2d2f3e8a124113c7|7cbcec4f33788c70|870843693|plots/supplement-plots/12_analysis-speed.pdf|t20193.4868001702s|s7489b|7489|file|local|vector|||0.147||
+valencia_plot|stem|7424cc9a35698f24|f59dd9100874963b|5b875d55409c44a1|1790500681|plots/main-plots/fig-valencia.png|t20193.4868356519s|s1164908b|1164908|file|local|vector|||3.06||
+fig_package_workflow|stem|3ddba2c612067313|a2e3b3767f125df0|ae4d4ec753c4e3b5|653680822|plots/supplement-plots/11_fig_package_workflow.pdf|t20193.4868412009s|s21796b|21796|file|local|vector|||0.463||
+previous_uses_plots|stem|f8135182b2ff54d9|2bd6e9bfd520fba6|1aa58f1a4dd0c5ec|1725534581|plots/supplement-plots/10_fig_language_software.pdf*plots/supplement-plots/11_fig_package_workflow.pdf*plots/supplement-plots/12_analysis-speed.pdf*plots/supplement-plots/1_fig_topics.pdf*plots/supplement-plots/2_fig_data_years.pdf*plots/supplement-plots/3_fig_data_time_resolution.pdf*plots/supplement-plots/4_fig_data_spatial_resolution.pdf*plots/supplement-plots/5_fig_data_pre_processing.pdf*plots/supplement-plots/6_fig_shared_pre_processed_data.pdf*plots/supplement-plots/7_fig_analysis_reproducibility.pdf*plots/supplement-plots/8_fig_vis_reproducibility.pdf*plots/supplement-plots/9_fig_citation_approaches.pdf|t20193.4868504378s|s80398b|80398|file|local|vector|||0.791|[1m[22mUsing the `size` aesthetic with geom_segment was deprecated in ggplot2 3.4.0. [36mℹ[39m Please use the `linewidth` aesthetic instead.|
+articles_csv|stem|21f085ab66d24bf3|ae8f4bceb07a5beb|532f42e503bb9199|1884928899|supplement-data/articles-using-mitms-mobility-data.csv|t20193.4868513749s|s14519b|14519|file|local|vector|||0.07||
