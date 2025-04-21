@@ -43,7 +43,7 @@ case_study_madrid_work_v_nonwork_trips_plot <- function(
   od_non_work_morning <- od_trip_types_morning |>
     filter(
       activity_origin %in%
-        c("frequent_activityuent", "infrequent_activity") |
+        c("frequent_activity", "infrequent_activity") |
         activity_destination %in% c("frequent_activity", "infrequent_activity")
     ) |>
     group_by(o, d) |>
@@ -61,7 +61,7 @@ case_study_madrid_work_v_nonwork_trips_plot <- function(
   od_non_work_evening <- od_trip_types_evening |>
     filter(
       activity_origin %in%
-        c("frequent_activityuent", "infrequent_activity") |
+        c("frequent_activity", "infrequent_activity") |
         activity_destination %in% c("frequent_activity", "infrequent_activity")
     ) |>
     group_by(o, d) |>
@@ -116,7 +116,7 @@ case_study_madrid_work_v_nonwork_trips_plot <- function(
     nodes = nodes,
     edge_width_factor = 1 / 3.11
   ) +
-    labs(title = "A: Home to Work/Study Trips", subtitle = "Morning (7-11)")
+    labs(title = "A: Home <-> Work/Study", subtitle = "Morning (7-11) trips")
 
   p_non_work_morning <- create_flowmap(
     od = od_non_work_morning,
@@ -124,8 +124,8 @@ case_study_madrid_work_v_nonwork_trips_plot <- function(
     edge_width_factor = 1
   ) +
     labs(
-      title = "B: Home/Work/Study to Other Trips",
-      subtitle = "Morning (7-11)"
+      title = "B: Home/Work/Study <-> Other",
+      subtitle = "Morning (7-11) trips"
     )
 
   p_home_work_study_evening <- create_flowmap(
@@ -133,7 +133,7 @@ case_study_madrid_work_v_nonwork_trips_plot <- function(
     nodes = nodes,
     edge_width_factor = 1 / 4.62
   ) +
-    labs(title = "C: Home to Work/Study Trips", subtitle = "Evening (17-21)")
+    labs(title = "C: Home <-> Work/Study", subtitle = "Evening (17-21) trips")
 
   p_non_work_evening <- create_flowmap(
     od = od_non_work_evening,
@@ -141,8 +141,8 @@ case_study_madrid_work_v_nonwork_trips_plot <- function(
     edge_width_factor = 1 / 1.19
   ) +
     labs(
-      title = "D: Home/Work/Study to Other Trips",
-      subtitle = "Evening (17-21)"
+      title = "D: Home/Work/Study <-> Other",
+      subtitle = "Evening (17-21) trips"
     )
 
   p_compare <- (p_home_work_study_morning + p_non_work_morning) /
