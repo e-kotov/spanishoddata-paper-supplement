@@ -1,5 +1,7 @@
 
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207374.svg)](https://doi.org/10.5281/zenodo.15207374)
+
 This
 [repository](https://github.com/e-kotov/spanishoddata-paper-supplement)
 contains the supplementary materials, data processing pipelines,

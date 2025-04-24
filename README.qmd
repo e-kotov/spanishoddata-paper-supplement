@@ -8,6 +8,8 @@ format:
 brand: brand.yml
 ---
 
+[[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207374.svg)](https://doi.org/10.5281/zenodo.15207374)]{.content-visible when-format="markdown"}
+
 This [repository](https://github.com/e-kotov/spanishoddata-paper-supplement) contains the supplementary materials, data processing pipelines, computational environment preserved in Docker and Apptainer container images, and scripts used for **'spanishoddata: A package for accessing and working with large Spanish mobility datasets'** article. The snapshot of this repository is at Zenodo: [https://doi.org/10.5281/zenodo.15207374](https://doi.org/10.5281/zenodo.15207374).
 
 To open this repository online using interactive `RStudio` environment and run the scripts, Just click the link \>\> [[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio) ]{.content-visible when-format="markdown"} [https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio), then read the [relevant section below](#binder).
