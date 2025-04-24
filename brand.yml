@@ -1,0 +1,4 @@
+typography:
+  link:
+    decoration: underline
+    color: "#1c84e5"
