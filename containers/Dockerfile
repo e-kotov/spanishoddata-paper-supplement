@@ -1,5 +1,7 @@
 FROM rocker/binder:4.4.2
 
+LABEL org.opencontainers.image.source="https://github.com/e-kotov/spanishoddata-paper-supplement"
+
 # temporarily switch to root
 # otherwise binder image will not allow us to install packages
 USER root
