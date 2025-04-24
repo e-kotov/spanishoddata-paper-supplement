@@ -10,7 +10,7 @@ brand: brand.yml
 
 This [repository](https://github.com/e-kotov/spanishoddata-paper-supplement) contains the supplementary materials, data processing pipelines, and scripts used for **'spanishoddata: A package for accessing and working with large Spanish mobility datasets'** article. The snapshot of this repository is at Zenodo: [https://doi.org/10.5281/zenodo.15207374](https://doi.org/10.5281/zenodo.15207374).
 
-To open this repository online using interactive `RStudio` environment and run the scripts, just click the link \>\> [[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio)]{.content-visible when-format="gfm"}[[https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio).]{.content-visible when-format="typst"}, then read the [relevant section below](#binder).
+To open this repository online using interactive `RStudio` environment and run the scripts, Just click the link \>\> [[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio) ]{.content-visible when-format="markdown"} [https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio), then read the [relevant section below](#binder).
 
 # Getting Started
 
@@ -64,7 +64,7 @@ The "main" step that generates figures can be reproduced in a cloud hosted envir
 
 ### Option 1: Reproducing the figures in a web-browser using Binder {#binder}
 
-- Just click the link \>\> [[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio)]{.content-visible when-format="gfm"}[[https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio).]{.content-visible when-format="typst"}
+- Just click the link \>\> [[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio) ]{.content-visible when-format="markdown"} [https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio).
 - Wait for RStudio to load inside the web browser tab.
 - Run `targets::tar_destroy` in R console to delete the pipeline snapshots.
 - Run `targets::tar_make()` in R console to regenerate all figures.

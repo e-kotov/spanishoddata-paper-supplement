@@ -8,8 +8,10 @@ with large Spanish mobility datasets’** article. The snapshot of this
 repository is at Zenodo: <https://doi.org/10.5281/zenodo.15207374>.
 
 To open this repository online using interactive `RStudio` environment
-and run the scripts, just click the link \>\> , then read the [relevant
-section below](#binder).
+and run the scripts, Just click the link \>\>
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio)
+<https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio>,
+then read the [relevant section below](#binder).
 
 # Getting Started
 
@@ -83,6 +85,8 @@ hosted environment using the pre-build container image.
 ### Option 1: Reproducing the figures in a web-browser using Binder
 
 - Just click the link \>\>
+  [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio)
+  <https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio>.
 - Wait for RStudio to load inside the web browser tab.
 - Run `targets::tar_destroy` in R console to delete the pipeline
   snapshots.
