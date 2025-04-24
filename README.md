@@ -2,10 +2,12 @@
 
 This
 [repository](https://github.com/e-kotov/spanishoddata-paper-supplement)
-contains the supplementary materials, data processing pipelines, and
-scripts used for **‘spanishoddata: A package for accessing and working
-with large Spanish mobility datasets’** article. The snapshot of this
-repository is at Zenodo: <https://doi.org/10.5281/zenodo.15207374>.
+contains the supplementary materials, data processing pipelines,
+computational environment preserved in Docker and Apptainer container
+images, and scripts used for **‘spanishoddata: A package for accessing
+and working with large Spanish mobility datasets’** article. The
+snapshot of this repository is at Zenodo:
+<https://doi.org/10.5281/zenodo.15207374>.
 
 To open this repository online using interactive `RStudio` environment
 and run the scripts, Just click the link \>\>
@@ -43,7 +45,7 @@ sections that describe each pipeline.
 
 ## Files for reproducibility
 
-|  |  |  |
+| Top-level folder / file | Second-level item | Description |
 |----|----|----|
 | **containers/** | Dockerfile | `Dockerfile` to reproduce the computational environment |
 |  | update-mermaid-js.R | R script that updates `Mermaid.js` library that i used for workflow plot generation |
