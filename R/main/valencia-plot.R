@@ -124,7 +124,7 @@ case_study_valencia_biking_potential_plot <- function(
     fs::dir_create(plots_output_dir, recurse = TRUE)
   }
 
-  plot_save_path <- paste0(plots_output_dir, "/fig-valencia.png")
+  plot_save_path <- paste0(plots_output_dir, "/fig-01-valencia.jpeg")
 
   # Save map as an image
   tmap::tmap_save(

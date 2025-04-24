@@ -160,7 +160,7 @@ case_study_madrid_work_v_nonwork_trips_plot <- function(
     fs::dir_create(plots_output_dir)
   }
 
-  plot_save_path <- paste0(plots_output_dir, "/fig-madrid.png")
+  plot_save_path <- paste0(plots_output_dir, "/fig-02-madrid.jpeg")
 
   ggsave(
     plot_save_path,
