@@ -28,6 +28,8 @@ sections that describe each pipeline.
 
 # Repository Structure
 
+<a name="general-interest-files"></a>
+
 ## General interest files
 
 | Top-level folder / file | Second-level item | Description |
@@ -42,6 +44,8 @@ sections that describe each pipeline.
 |  | scopus-search-results.bib | Raw Scopus search results in `BibTeX` format |
 |  | speed_test_summary.csv | Raw speed-test data produced by the “**speed_test”** pipeline (used in supplement) |
 | **qmd/** | — | Human-readable Quarto/Markdown files to reproduce the case studies |
+
+<a name="files-for-reproducibility"></a>
 
 ## Files for reproducibility
 
@@ -83,6 +87,8 @@ large data downloads and long processing times.
 
 The “main” step that generates figures can be reproduced in a cloud
 hosted environment using the pre-build container image.
+
+<a name="binder"></a>
 
 ### Option 1: Reproducing the figures in a web-browser using Binder
 
@@ -180,6 +186,8 @@ package installation from online source is necessary. To run the
 pipelines, kindly see the [relevant section below](#pipelines).
 
 When you are done, press `Ctrl+C` in the terminal to stop the container.
+
+<a name="#zenodo-docker-container"></a>
 
 ##### Using Zenodo hosted container
 
@@ -288,6 +296,8 @@ container that you can connect to with SSH, as it has a built in SSH
 server, but you will need to configure it at start up time with a SLURM
 script and then tunnel/forward ports so that you can connect to it from
 Positron, VScode or Zed using their remote features.
+
+<a name="pipelines"></a>
 
 # Pipelines: original project steps
 

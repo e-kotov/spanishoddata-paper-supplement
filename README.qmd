@@ -18,6 +18,8 @@ If you are only looking for the aritcle plots and supplement data (such as artic
 
 # Repository Structure {#repository-structure}
 
+<a name="general-interest-files"></a>
+
 ## General interest files {#general-interest-files}
 
 | Top-level folder / file | Second-level item | Description |
@@ -32,6 +34,8 @@ If you are only looking for the aritcle plots and supplement data (such as artic
 |  | scopus-search-results.bib | Raw Scopus search results in `BibTeX` format |
 |  | speed_test_summary.csv | Raw speed-test data produced by the "**speed_test"** pipeline (used in supplement) |
 | **qmd/** | — | Human-readable Quarto/Markdown files to reproduce the case studies |
+
+<a name="files-for-reproducibility"></a>
 
 ## Files for reproducibility
 
@@ -61,6 +65,8 @@ If you are only looking for the aritcle plots and supplement data (such as artic
 This repository contains all files required to reproduce the analysis described in the article. Some analysis steps are inherently unreproducible, such as "cache_osm_data", as they take a snapshot of latest data at the time of running the code and later the retrieved data may change. Some steps require very large data downloads and processing power ("speed_test" and "data_prep"). Therefore these steps were isolated in separate pipelines. The repository comes with snapshots from these pipelines that are sufficient to run the "main" pipeline that reproduces all figures for the main article and the supplement, however if you would like to reproduce all other pipelines, be prepared for large data downloads and long processing times.
 
 The "main" step that generates figures can be reproduced in a cloud hosted environment using the pre-build container image.
+
+<a name="binder"></a>
 
 ### Option 1: Reproducing the figures in a web-browser using Binder {#binder}
 
@@ -135,6 +141,8 @@ The R session will restart and you will be able to run any pipeline using the pa
 
 When you are done, press `Ctrl+C` in the terminal to stop the container.
 
+
+<a name="#zenodo-docker-container"></a>
 
 ##### Using Zenodo hosted container {#zenodo-docker-container}
 
@@ -221,6 +229,7 @@ When you are done, press `Ctrl+C` in the terminal to stop the container.
 
 You can also use the same container to run on HPC as a developer container that you can connect to with SSH, as it has a built in SSH server, but you will need to configure it at start up time with a SLURM script and then tunnel/forward ports so that you can connect to it from Positron, VScode or Zed using their remote features.
 
+<a name="pipelines"></a>
 
 # Pipelines: original project steps {#pipelines}
 
