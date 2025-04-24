@@ -142,7 +142,7 @@ The R session will restart and you will be able to run any pipeline using the pa
 When you are done, press `Ctrl+C` in the terminal to stop the container.
 
 
-<a name="#zenodo-docker-container"></a>
+<a name="zenodo-docker-container"></a>
 
 ##### Using Zenodo hosted container {#zenodo-docker-container}
 

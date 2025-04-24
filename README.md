@@ -187,7 +187,7 @@ pipelines, kindly see the [relevant section below](#pipelines).
 
 When you are done, press `Ctrl+C` in the terminal to stop the container.
 
-<a name="#zenodo-docker-container"></a>
+<a name="zenodo-docker-container"></a>
 
 ##### Using Zenodo hosted container
 
