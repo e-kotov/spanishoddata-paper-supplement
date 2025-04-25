@@ -12,14 +12,14 @@ snapshot of this repository is at Zenodo:
 <https://doi.org/10.5281/zenodo.15207374>.
 
 To open this repository online using interactive `RStudio` environment
-and run the scripts, Just click the link \>\>
+and run the scripts, just click the link \>\>
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio)
 <https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio>,
 then read the [relevant section below](#binder).
 
 # Getting Started
 
-If you are only looking for the aritcle plots and supplement data (such
+If you are only looking for the article plots and supplement data (such
 as articles analysis data, search queries and results), kindly see the
 [“Repository Structure” -\> “General interest
 files”](#general-interest-files) section. If you would like to learn
@@ -67,7 +67,7 @@ sections that describe each pipeline.
 | **\_targets_pipeline_plots.R** | — | `targets` script that builds the figures for this repository that provide an overview of each pipeline. |
 | **Dockerfile** | — | `Dockerfile` for <https://mybinder.org/> or **`docker2repo`** to run the computational environment for reproducing all targets pipelines. |
 
-`Docker` and `Apptainer` container images with presereved computaitonal
+`Docker` and `Apptainer` container images with presereved computational
 environment are deposited with a copy of this repository at
 <https://doi.org/10.5281/zenodo.15207374>.
 
@@ -104,7 +104,7 @@ hosted environment using the pre-build container image.
 - You will find the updated figures in the `plots/` folder.
 
 You will likely not be able to run any other pipeline in this
-enviromnet, as it does not have enough compute power.
+environment, as it does not have enough compute power.
 
 ### Option 2: Reproducing with locally installed `R`
 
@@ -394,7 +394,7 @@ The visualisations are generated as code for `mermaid` diagrams, as
 `html` and `png` files in the `media` directory. These are the plots you
 can observe above for each pipeline.
 
-# Building the computational environment from scracth
+# Building the computational environment from scratch
 
 Here we provide some details how to build the environment from scratch.
 
