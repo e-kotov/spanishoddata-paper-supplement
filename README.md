@@ -98,7 +98,9 @@ hosted environment using the pre-build container image.
   [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio)
   <https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio>.
 - Wait for RStudio to load inside the web browser tab.
-- Run `targets::tar_destroy` in R console to delete the pipeline
+- Run `targets::tar_visnetwork()` in R console visualise the pipeline of
+  actions that generate the figures.
+- Run `targets::tar_destroy()` in R console to delete the pipeline
   snapshots.
 - Run `targets::tar_make()` in R console to regenerate all figures.
 - You will find the updated figures in the `plots/` folder.
