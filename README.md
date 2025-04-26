@@ -113,7 +113,7 @@ environment, as it does not have enough compute power.
 Before proceeding with the steps make sure the computational environment
 is set up correctly.
 
-- Install R 4.3.2 or later.
+- Install R 4.4.2 or later.
 
 - Clone the repository or download it manually and unpack.
 

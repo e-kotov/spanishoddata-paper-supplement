@@ -86,7 +86,7 @@ You will likely not be able to run any other pipeline in this environment, as it
 
 Before proceeding with the steps make sure the computational environment is set up correctly.
 
-- Install R 4.3.2 or later.
+- Install R 4.4.2 or later.
 
 - Clone the repository or download it manually and unpack.
 
