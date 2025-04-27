@@ -53,7 +53,7 @@ if (is_container() && have_pkgs) {
             silent = TRUE
           )
           try(
-            rstudioapi::navigateToFile("README.md", line = 376),
+            rstudioapi::navigateToFile("README.md", line = 360),
             silent = TRUE
           )
         }
