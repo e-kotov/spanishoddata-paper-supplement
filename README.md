@@ -7,8 +7,8 @@ This
 contains the supplementary materials, data processing pipelines,
 computational environment preserved in Docker and Apptainer container
 images, and scripts used for **‘spanishoddata: A package for accessing
-and working with large Spanish mobility datasets’** article. The
-snapshot of this repository is at Zenodo:
+and working with Spanish Open Mobility Big Data’** article. The snapshot
+of this repository is at Zenodo:
 <https://doi.org/10.5281/zenodo.15207374>.
 
 To open this repository online using interactive `RStudio` environment
@@ -320,7 +320,8 @@ provided containerised enviroment started in the project root directory.
 ## 1. Download and cache OSM data for Valencia
 
 The line below will run the workflow to download the OSM data for
-Valencia and save it to the `data/proc/osm` directory.
+Valencia and save it to the `data/proc/osm` directory (the source is in
+`_targets_cache_osm_data.R` file).
 
 ``` r
 Sys.setenv(TAR_PROJECT = "cache_osm_data"); targets::tar_make()
@@ -342,7 +343,8 @@ with different number of threads and memory limits. This may take over a
 day and the combinations of threads and memory may need to be adjusted
 in the `_targets_speed_test.R` file in the root of the repository
 depending on your available hardware. Currently the maximum hardware
-specs to test are set up at 128 GB of memory and 64 processor cores.
+specs to test are set up at 128 GB of memory and 64 processor cores. The
+source is in `_targets_speed_test.R` file.
 
 ``` r
 Sys.setenv(TAR_PROJECT = "speed_test"); targets::tar_make()
@@ -357,7 +359,8 @@ workflow](plots/pipeline-plots/speed_test.png)
 ## 3. Prepare the data for figures
 
 This step prepares all data, except the speed test data, to produce the
-article and supplement figures.
+article and supplement figures. The source is in `_targets_data_prep.R`
+file.
 
 ``` r
 Sys.setenv(TAR_PROJECT = "data_prep"); targets::tar_make()
@@ -373,7 +376,7 @@ alt="Pipeline visualisation of the data_prep workflow" />
 ## 4. Run the analysis and reproduce all figures
 
 To run the analysis and reproduce all the figures run the following
-line:
+line. The source is in `_targets_main.R` file.
 
 ``` r
 Sys.setenv(TAR_PROJECT = "main"); targets::tar_make()
@@ -386,7 +389,8 @@ alt="Pipeline visualisation of the main workflow" />
 
 ## Generate pipeline visualisations
 
-To generate pipeline visualisations run the following line:
+To generate pipeline visualisations run the following line. The source
+is in `_targets_pipeline_plots.R` file.
 
 ``` r
 Sys.setenv(TAR_PROJECT = "pipeline-plots"); targets::tar_make()

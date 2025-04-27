@@ -10,7 +10,7 @@ brand: brand.yml
 
 [[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15207374.svg)](https://doi.org/10.5281/zenodo.15207374)]{.content-visible when-format="markdown"}
 
-This [repository](https://github.com/e-kotov/spanishoddata-paper-supplement) contains the supplementary materials, data processing pipelines, computational environment preserved in Docker and Apptainer container images, and scripts used for **'spanishoddata: A package for accessing and working with large Spanish mobility datasets'** article. The snapshot of this repository is at Zenodo: [https://doi.org/10.5281/zenodo.15207374](https://doi.org/10.5281/zenodo.15207374).
+This [repository](https://github.com/e-kotov/spanishoddata-paper-supplement) contains the supplementary materials, data processing pipelines, computational environment preserved in Docker and Apptainer container images, and scripts used for **'spanishoddata: A package for accessing and working with Spanish Open Mobility Big Data'** article. The snapshot of this repository is at Zenodo: [https://doi.org/10.5281/zenodo.15207374](https://doi.org/10.5281/zenodo.15207374).
 
 To open this repository online using interactive `RStudio` environment and run the scripts, just click the link \>\> [[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio) ]{.content-visible when-format="markdown"} [https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio](https://mybinder.org/v2/gh/e-kotov/spanishoddata-paper-supplement/HEAD?urlpath=rstudio), then read the [relevant section below](#binder).
 
@@ -242,7 +242,7 @@ All steps assume you have either local R or R running in the the provided contai
 
 ## 1. Download and cache OSM data for Valencia
 
-The line below will run the workflow to download the OSM data for Valencia and save it to the `data/proc/osm` directory.
+The line below will run the workflow to download the OSM data for Valencia and save it to the `data/proc/osm` directory (the source is in `_targets_cache_osm_data.R` file).
 
 ``` r
 Sys.setenv(TAR_PROJECT = "cache_osm_data"); targets::tar_make()
@@ -254,7 +254,7 @@ Because this data is changing every day, the downloaded file is then uploaded to
 
 ## 2. Run the speed test
 
-The line below runs the workflow that downloads 18 GB of data using `spanishoddata` `R` package, converts it to `duckdb` and `parquet` (which will additionally take about 40 GB) and runs a series of tests with different number of threads and memory limits. This may take over a day and the combinations of threads and memory may need to be adjusted in the `_targets_speed_test.R` file in the root of the repository depending on your available hardware. Currently the maximum hardware specs to test are set up at 128 GB of memory and 64 processor cores.
+The line below runs the workflow that downloads 18 GB of data using `spanishoddata` `R` package, converts it to `duckdb` and `parquet` (which will additionally take about 40 GB) and runs a series of tests with different number of threads and memory limits. This may take over a day and the combinations of threads and memory may need to be adjusted in the `_targets_speed_test.R` file in the root of the repository depending on your available hardware. Currently the maximum hardware specs to test are set up at 128 GB of memory and 64 processor cores. The source is in `_targets_speed_test.R` file.
 
 ``` r
 Sys.setenv(TAR_PROJECT = "speed_test"); targets::tar_make()
@@ -266,7 +266,7 @@ The results are saved into `supplement-data/speed_test_results.csv` and are reus
 
 ## 3. Prepare the data for figures
 
-This step prepares all data, except the speed test data, to produce the article and supplement figures.
+This step prepares all data, except the speed test data, to produce the article and supplement figures. The source is in `_targets_data_prep.R` file.
 
 ```r
 Sys.setenv(TAR_PROJECT = "data_prep"); targets::tar_make()
@@ -279,7 +279,7 @@ Results are cached in the `_targets/data_prep` directory and are available in th
 
 ## 4. Run the analysis and reproduce all figures
 
-To run the analysis and reproduce all the figures run the following line:
+To run the analysis and reproduce all the figures run the following line. The source is in `_targets_main.R` file.
 
 ``` r
 Sys.setenv(TAR_PROJECT = "main"); targets::tar_make()
@@ -291,7 +291,7 @@ The figures are generated in the `plots` directory.
 
 ## Generate pipeline visualisations
 
-To generate pipeline visualisations run the following line:
+To generate pipeline visualisations run the following line. The source is in `_targets_pipeline_plots.R` file.
 
 ``` r
 Sys.setenv(TAR_PROJECT = "pipeline-plots"); targets::tar_make()
