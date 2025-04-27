@@ -12,9 +12,9 @@ is_container <- function() {
 have_pkgs <- requireNamespace("targets", quietly = TRUE) &&
   requireNamespace("spanishoddata", quietly = TRUE)
 
-if (interactive() && is_container() && have_pkgs) {
+if (is_container() && have_pkgs) {
   # Container detected: show startup messages
-  if (requireNamespace("cli", quietly = TRUE)) {
+  if (interactive() && requireNamespace("cli", quietly = TRUE)) {
     cli::cli_text(
       "\n\nWelcome to the computational environment for the 'spanishoddata: A package for accessing and working with Spanish Open Mobility Big Data' article."
     )
@@ -30,7 +30,7 @@ if (interactive() && is_container() && have_pkgs) {
     cli::cli_text("Run {.run targets::tar_make()} to regenerate all figures.")
     cli::cli_text("Updated figures are in the `plots/` folder.")
     cli::cli_text("See {.file README.md} for more details.")
-  } else {
+  } else if (interactive()) {
     message(
       "\n\nWelcome to the computational environment for the 'spanishoddata' article (container detected)."
     )
