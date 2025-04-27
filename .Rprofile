@@ -12,7 +12,7 @@ is_container <- function() {
 have_pkgs <- requireNamespace("targets", quietly = TRUE) &&
   requireNamespace("spanishoddata", quietly = TRUE)
 
-if (is_container() && have_pkgs) {
+if (interactive() && is_container() && have_pkgs) {
   # Container detected: show startup messages
   if (requireNamespace("cli", quietly = TRUE)) {
     cli::cli_text(
@@ -53,7 +53,7 @@ if (is_container() && have_pkgs) {
             silent = TRUE
           )
           try(
-            rstudioapi::navigateToFile("README.md", line = 373),
+            rstudioapi::navigateToFile("README.md", line = 376),
             silent = TRUE
           )
         }
