@@ -134,13 +134,7 @@ If both container registries do not have the requested image, try downloading it
 
 In terminal, look for the link 'http://127.0.0.1:8888/lab?token=SOMEALPHANUMERICSTRING' and open it in your browser. A JupyterLab will open in your browser. From there, click the `RStudio` button.
 
-When in `RStudio`, run the following line to disable `renv`:
-
-```r
-renv::deactivate()
-```
-
-The R session will restart and you will be able to run any pipeline using the packages that are already preinstalled in the container, no package installation from online source is necessary. To run the pipelines, kindly see the [relevant section below](#pipelines).
+To run the pipelines, kindly see the [relevant section below](#pipelines).
 
 When you are done, press `Ctrl+C` in the terminal to stop the container.
 
@@ -190,13 +184,7 @@ docker run --platform linux/amd64 --rm -p 8888:8888 -v $(pwd):/home/rstudio r442
 
 In terminal, look for the link 'http://127.0.0.1:8888/lab?token=SOMEALPHANUMERICSTRING' and open it in your browser. A JupyterLab will open in your browser. From there, click the `RStudio` button.
 
-When in `RStudio`, run the following line to disable `renv`:
-
-```r
-renv::deactivate()
-```
-
-The R session will restart and you will be able to run any pipeline using the packages that are already preinstalled in the container, no package installation from online source is necessary. To run the pipelines, kindly see the [relevant section below](#pipelines).
+To run the pipelines, kindly see the [relevant section below](#pipelines).
 
 When you are done, press `Ctrl+C` in the terminal to stop the container.
 

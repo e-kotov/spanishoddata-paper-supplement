@@ -178,16 +178,8 @@ In terminal, look for the link
 your browser. A JupyterLab will open in your browser. From there, click
 the `RStudio` button.
 
-When in `RStudio`, run the following line to disable `renv`:
-
-``` r
-renv::deactivate()
-```
-
-The R session will restart and you will be able to run any pipeline
-using the packages that are already preinstalled in the container, no
-package installation from online source is necessary. To run the
-pipelines, kindly see the [relevant section below](#pipelines).
+To run the pipelines, kindly see the [relevant section
+below](#pipelines).
 
 When you are done, press `Ctrl+C` in the terminal to stop the container.
 
@@ -239,16 +231,8 @@ In terminal, look for the link
 your browser. A JupyterLab will open in your browser. From there, click
 the `RStudio` button.
 
-When in `RStudio`, run the following line to disable `renv`:
-
-``` r
-renv::deactivate()
-```
-
-The R session will restart and you will be able to run any pipeline
-using the packages that are already preinstalled in the container, no
-package installation from online source is necessary. To run the
-pipelines, kindly see the [relevant section below](#pipelines).
+To run the pipelines, kindly see the [relevant section
+below](#pipelines).
 
 When you are done, press `Ctrl+C` in the terminal to stop the container.
 
