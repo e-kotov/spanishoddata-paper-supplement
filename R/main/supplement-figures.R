@@ -251,7 +251,7 @@ generate_previous_uses_plots <- function(
     ggalt::geom_lollipop(horizontal = TRUE) +
     geom_text(aes(label = article_count), hjust = -1) +
     labs(
-      title = "MITMS data pre-processing code",
+      title = "Sharing of pre-processed MITMS data",
       x = "Share (%)",
       y = "",
       caption = "Share (on x axis) and Number (on plot) of Articles by Shared Pre-processed MITMS Data"
